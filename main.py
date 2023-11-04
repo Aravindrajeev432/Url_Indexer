@@ -2,6 +2,7 @@ import requests
 from decouple import config
 import time
 api_key = config("APIKEY")
+site_url = config("SITEURL")
 url_list = config("URLLIST", cast=lambda v: [s.strip() for s in v.split(',')])
 
 
@@ -20,7 +21,7 @@ def main() -> bool:
     params: dict = {
         "apikey": api_key,
     }
-    data: dict = {"siteUrl": "", "urlList": url_list}
+    data: dict = {"siteUrl": site_url, "urlList": url_list}
     response = requests.get(url, headers=headers, params=params, json=data)
     if response.status_code == 200:
         return True

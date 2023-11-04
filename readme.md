@@ -16,7 +16,7 @@ Python3 and two packages are used in this project
 To run this project, you will need to add the following environment variables to your .env file
 
 `APIKEY=ADAFadsf**`
-
+`SITEURL=mywebsite.com`
 `URLLIST=example.com,example2.com,example3.com`
 
 ## Run Locally
