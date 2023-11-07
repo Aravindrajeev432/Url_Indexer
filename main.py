@@ -13,7 +13,7 @@ def record_timestamp(result):
 
 def main() -> bool:
     
-    url: str = "ssl.bing.com/webmaster/api.svc/json/SubmitUrIbatch"
+    url: str = "https://ssl.bing.com/webmaster/api.svc/json/SubmitUrIbatch"
     headers: dict = {
         "Content-Type": "application/json",
         "charset": "utf-8",
